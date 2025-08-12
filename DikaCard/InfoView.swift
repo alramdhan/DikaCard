@@ -13,15 +13,14 @@ struct InfoView: View {
     
     var body: some View {
         RoundedRectangle(cornerRadius: 25)
-            .fill(.white)
-            .foregroundColor(.black)
+            .fill(Color("CardInfoBGColor"))
             .frame(height: 50.0)
             .overlay(
                 HStack {
                     Image(systemName: imageName)
-                        .foregroundColor(Color(red: 0.09, green: 0.63, blue: 0.52))
+                        .foregroundColor(Color(hex: 0xF78FB3))
                     Text(text)
-                        .foregroundColor(.black)
+                        .foregroundColor(Color("Info Color"))
                         .font(.body)
                 }
             )
